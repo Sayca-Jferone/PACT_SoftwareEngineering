@@ -232,7 +232,9 @@ class Config(TypedDict):
     port: int
 
 
+# Règle non-respectée pour les déclarations/lignes trop longues pour ancre d'indentation (delta anchor < sub-content < 80 chars-per-line)
 DEFAULTS: dict[str, list[str | dict[str, int]]] = {
+               # Indentation sous la même ligne d'ouverture de scope
     "servers": [
                "alpha.local",
                "beta.local",
@@ -246,11 +248,12 @@ DEFAULTS: dict[str, list[str | dict[str, int]]] = {
                ],
 }
 
-
+             # Variante d'indentation du contente différée de 1 char pour respect des normes, si début de contenu depuis la même ligne d'ouverture
 def build_url(cfg: Config,
               path: str,
               params: list[str],
               ) -> str:
+            # Variante d'indentation différée d'un char par la droite, même sans contenu sur la ligne d'ouverture
     return (
             f"http://{cfg['host']}"
             f":{cfg['port']}"

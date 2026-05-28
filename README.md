@@ -205,4 +205,58 @@ La convergence est réelle. Les racines : DbC (contrats), arc42 (format pratique
 
 ---
 
+### Compléments
+
+**Note de Sayca-Jferone**
+Je développe des scripts dont la lisibilité est facilitée pour l'oeuil humain, tout en respectant la règle dure imposée de 80 caractères par ligne de code (Python3.10+) et 81 pour le C(99/11).
+
+La règle "D-Anchor" :
+  Après tout délimiteur ouvrant ([ ( {),
+  le premier token du niveau suivant
+  s'aligne à col(délimiteur) + 1.
+  La règle s'applique récursivement à chaque sous-niveau.
+  Contrainte dure : aucune ligne > 80 chars.
+
+#### Exemple Python
+
+```python
+# "DAI - Delimiter-Anchored Indentation"
+# Règle : chaque token enfant s'aligne à col(délimiteur_ouvrant) + 1, règle souple à l'appréciation du développeur selon l'objet définit,
+# Récursif ; 80 chars max par ligne de code ; Flake8 ; Mypy --strict compliant
+
+from typing import TypedDict
+
+
+class Config(TypedDict):
+    host: str
+    port: int
+
+
+DEFAULTS: dict[str, list[str | dict[str, int]]] = {
+    "servers": [
+               "alpha.local",
+               "beta.local",
+               {"gamma.local": 8080,
+                "delta.local": 9090,
+                },
+               ],
+    "flags":   [
+               "verbose",
+               "retry",
+               ],
+}
+
+
+def build_url(cfg: Config,
+              path: str,
+              params: list[str],
+              ) -> str:
+    return (
+            f"http://{cfg['host']}"
+            f":{cfg['port']}"
+            f"/{path}"
+            f"?{'&'.join(params)}"
+            )
+```
+
 *Protocole de terrain, pas de théorie académique. Testé sur projets réels, raffiné sous contraintes réelles.*

@@ -207,6 +207,7 @@ La convergence est réelle. Les racines : DbC (contrats), arc42 (format pratique
 ### Compléments
 
 **Note de Sayca-Jferone**
+
 Je développe des scripts dont la lisibilité est facilitée pour l'oeuil humain, tout en respectant la règle dure imposée de 80 caractères par ligne de code (Python3.10+) et 81 pour le C(99/11).
 
 La règle "D-Anchor" :

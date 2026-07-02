@@ -15,7 +15,9 @@ Avec ou sans LLM, le coût réel n'est plus le temps à écrire du code, mais bi
 
 ### Préambule de DRAFT (remplaçant de PACT)
 
-Les chiffres et multiplicateurs sur ce schéma n'ont aucune valeur exacte, ni vérifiable dans ce document. Ce sont des variables abstraites, servant de représentation mentale, plutôt que d'argument de performance.
+⚠️ Les chiffres et multiplicateurs sur ce schéma n'ont aucune valeur exacte, ni vérifiable dans ce document.
+
+Ce sont des variables abstraites pour la représentation mentale, plutôt que d'argument de performance.
 
 ![Preambule de DRAFT](assets/DRAFT_showcase.jpg)
 

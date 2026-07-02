@@ -15,6 +15,8 @@ Avec ou sans LLM, le coût réel n'est plus le temps à écrire du code, mais bi
 
 ![Disclaimer sur les assistants artificiels](assets/disclaimer.png)
 
+![Preambule de DRAFT](assets/DRAFT_showcase.jpg)
+
 ## QUAND utiliser PACT ?
 
 ```txt

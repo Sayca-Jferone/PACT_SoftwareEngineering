@@ -13,9 +13,13 @@ Avec ou sans LLM, le coût réel n'est plus le temps à écrire du code, mais bi
 
 ### Apprentissage procédurier & Capacité à produire
 
-![Disclaimer sur les assistants artificiels](assets/disclaimer.png)
+### [NOUVEAU] Préambule de DRAFT (remplaçant de PACT)
 
 ![Preambule de DRAFT](assets/DRAFT_showcase.jpg)
+
+
+![Disclaimer sur les assistants artificiels](assets/disclaimer.png)
+
 
 ## QUAND utiliser PACT ?
 

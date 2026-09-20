@@ -2,6 +2,14 @@
 
 #### Update : v0.52 (09/05/2026)
 
+---
+
+## PACT IS DEPRECATED
+
+**PACT was my central component for [DRAFT](https://github.com/Sayca-Jferone/DRAFT)** Systems Development Formal Method.**
+
+---
+
 Avec ou sans LLM, le coût réel n'est plus le temps à écrire du code, mais bien celui de concevoir et débuguer une solution sans référentiel, à déconstruire sans architecture, à re/partir de zéro sans avoir éliminé le flou et identifié les failles de conception.
 
 ## QUI devrait utiliser PACT ?

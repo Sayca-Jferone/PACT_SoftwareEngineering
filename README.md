@@ -6,7 +6,7 @@
 
 ## PACT IS DEPRECATED
 
-**PACT was my central component for [DRAFT](https://github.com/Sayca-Jferone/DRAFT)** Systems Development Formal Method.**
+**Because PACT was my central component for [DRAFT](https://github.com/Sayca-Jferone/DRAFT) Systems Development Formal Method.**
 
 ---
 
